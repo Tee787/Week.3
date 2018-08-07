@@ -40,11 +40,41 @@ namespace IfPractices
 
             //Guess my number Exercise
 
-            int myNum, userNum;
+            Random random = new Random (); 
+            int randomNumber = random.Next(1, 11);
+            int guess;
+            int numberOfGuesses = 4;
+            bool gameOver = false;
 
             Console.WriteLine("______________Welcome!______________");
             Console.WriteLine("");
-            Console.WriteLine("")
+            Console.WriteLine("Guess my number between 1 and 10 What is it? ");
+
+            while (gameOver == false)
+            {
+                guess = Convert.ToInt32(Console.ReadLine());
+                numberOfGuesses--;
+
+                if (guess != randomNumber && numberOfGuesses == 0)
+                {
+                    Console.WriteLine("\nSorry, that's 4 guesses");
+                    gameOver = true;
+                }
+                else if (guess == randomNumber)
+                {
+                    Console.WriteLine("\nCongratulations! You have guessed my number! ");
+                    gameOver = true;
+                }
+                else if (guess > randomNumber)
+
+                    Console.WriteLine("\nSorry, My number is smaller than the number you have guessed. Try again: ");
+
+                else if (guess < randomNumber)
+
+                    Console.WriteLine("\nSorry, my number is higher than the number you have guessed. Please try again ");
+               
+            }
+            Console.Read();
 
 
         }
