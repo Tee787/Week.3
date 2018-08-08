@@ -10,7 +10,7 @@ namespace IfPractices
     {
         static void Main(string[] args)
         {
-            //Comparing Integers Exercise
+            //1. Comparing Integers Exercise
 
             /*int a, b;
 
@@ -38,9 +38,9 @@ namespace IfPractices
 
             Console.ReadLine();*/
 
-            //Guess my number Exercise
+            //2. Guess my number Exercise
 
-            Random random = new Random (); 
+            /*Random random = new Random (); 
             int randomNumber = random.Next(1, 11);
             int guess;
             int numberOfGuesses = 4;
@@ -74,9 +74,111 @@ namespace IfPractices
                     Console.WriteLine("\nSorry, my number is higher than the number you have guessed. Please try again ");
                
             }
-            Console.Read();
+            Console.Read();*/
+
+            // 3. Grade Exercise
+
+
+            //float percentage = GetUserInput();                   
+
+
+            //    Console.WriteLine("\nYour overall marks are: {0} ", percentage);
+
+            //    if (percentage >= 90 && percentage <= 100)
+            //    {
+            //        Console.WriteLine("\nYour grade will be A+");
+            //    }
+            //    else if (percentage >= 80 && percentage <= 90)
+            //    {
+            //        Console.WriteLine("\nYour grade will be A");
+            //    }
+            //    else if (percentage >= 70 && percentage <= 80)
+            //    {
+            //        Console.WriteLine("\nYour grade will be B+");
+            //    }
+            //    else if (percentage >= 60 && percentage <= 70)
+            //    {
+            //        Console.WriteLine("\nYour grade will be B");
+            //    }
+            //    else if (percentage >= 50 && percentage <= 60)
+            //    {
+            //        Console.WriteLine("\nYour grade will be C");
+            //    }
+            //    else if (percentage >= 40 && percentage <= 50)
+            //    {
+            //        Console.WriteLine("\nYour grade will be D");
+            //    }
+            //    else if (percentage >= 0 && percentage <= 40)
+            //    {
+            //        Console.WriteLine("\nYour grade will be F");
+            //    }
+            //    else if (percentage > 100)
+            //    {
+            //        Console.WriteLine("\nERROR! Try again: ");
+            //    }
+            //    else if (percentage <= 0)
+            //    {
+            //        Console.WriteLine("\nERROR! Try again: ");
+            //    }
+            //Console.ReadLine();
+
+
+            //4.Odd or Even Exercise
+            
+
+            int a = (1 - 1000);
+            int b = (1 - 1000);
+
+            Console.WriteLine("************************Welcome**********************");
+            Console.WriteLine("\nChoose your first number: ", a);
+            a = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("\nChoose your second number: ", b);
+            b = Int32.Parse(Console.ReadLine());
+
+            if (a%b == 0)
+            {
+                Console.WriteLine("\nNumber is even");
+            }
+            else
+            {
+                Console.WriteLine("\nNumber is odd");
+            }
+            
+            Console.ReadLine();
+
+
+
+
+
+
 
 
         }
+
+        //public static float GetUserInput ()
+        //{
+        //    int assignment;
+        //    bool check = false;
+        //    float percentage = 0;
+
+        //    Console.WriteLine("**************Welcome!*****************");
+        //    Console.WriteLine("\nPlease enter the marks for all assignments: ");
+        //    for (int i = 1; i <= 4; i++)
+        //    {
+        //        do
+        //        {
+        //            Console.WriteLine("Enter marks for assignment " + i + ":");
+        //            assignment = int.Parse(Console.ReadLine());
+        //            if (assignment >= 101 || assignment <= 0)
+        //                Console.WriteLine("Error, try again.");
+        //            else
+        //                break;
+        //        } while (!check);
+        //        percentage = percentage + assignment;
+        //    }
+
+        //    return percentage/4;
+
+        
     }
 }
