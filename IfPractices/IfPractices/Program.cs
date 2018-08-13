@@ -78,7 +78,29 @@ namespace IfPractices
 
             // 3. Grade Exercise
 
+            //public static float GetUserInput ()
+            //{
+            //    int assignment;
+            //    bool check = false;
+            //    float percentage = 0;
 
+            //    Console.WriteLine("**************Welcome!*****************");
+            //    Console.WriteLine("\nPlease enter the marks for all assignments: ");
+            //    for (int i = 1; i <= 4; i++)
+            //    {
+            //        do
+            //        {
+            //            Console.WriteLine("Enter marks for assignment " + i + ":");
+            //            assignment = int.Parse(Console.ReadLine());
+            //            if (assignment >= 101 || assignment <= 0)
+            //                Console.WriteLine("Error, try again.");
+            //            else
+            //                break;
+            //        } while (!check);
+            //        percentage = percentage + assignment;
+            //    }
+
+            //    return percentage/4;
             //float percentage = GetUserInput();                   
 
 
@@ -124,9 +146,8 @@ namespace IfPractices
 
 
             //4.Odd or Even Exercise
-            
 
-            int a = (1 - 1000);
+            /*int a = (1 - 1000);
             int b = (1 - 1000);
 
             Console.WriteLine("************************Welcome**********************");
@@ -144,7 +165,44 @@ namespace IfPractices
                 Console.WriteLine("\nNumber is odd");
             }
             
-            Console.ReadLine();
+            Console.ReadLine();*/
+
+            //5. New pin number program
+
+            /*int Attempts = 0;
+            string pinCode1, pinCode2;
+            //Simple iteration upto three times
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Enter a 4-digit pin: ");
+                pinCode1 = Console.ReadLine();
+                Console.WriteLine("Re-enter your 4-digit pin again: ");
+                pinCode2 = (Console.ReadLine());
+
+                if (Attempts >= 1000 || Attempts <= 9999)
+                
+                    Console.WriteLine("ERROR! Pin number does not match. Please try again: ");
+                
+                else if (pinCode1 != "valid" || pinCode2 != "valid")
+                    Attempts++;
+
+                
+                else
+                {
+                    Console.WriteLine("Match successful");
+                }                  
+                                
+                    break;
+            }          
+            
+
+            Console.ReadKey();*/
+
+           
+               
+            }
+
+
 
 
 
@@ -155,29 +213,7 @@ namespace IfPractices
 
         }
 
-        //public static float GetUserInput ()
-        //{
-        //    int assignment;
-        //    bool check = false;
-        //    float percentage = 0;
-
-        //    Console.WriteLine("**************Welcome!*****************");
-        //    Console.WriteLine("\nPlease enter the marks for all assignments: ");
-        //    for (int i = 1; i <= 4; i++)
-        //    {
-        //        do
-        //        {
-        //            Console.WriteLine("Enter marks for assignment " + i + ":");
-        //            assignment = int.Parse(Console.ReadLine());
-        //            if (assignment >= 101 || assignment <= 0)
-        //                Console.WriteLine("Error, try again.");
-        //            else
-        //                break;
-        //        } while (!check);
-        //        percentage = percentage + assignment;
-        //    }
-
-        //    return percentage/4;
+       
 
         
     }
