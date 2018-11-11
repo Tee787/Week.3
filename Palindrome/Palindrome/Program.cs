@@ -38,7 +38,7 @@ namespace Palindrome
                 }
                 else
                     Console.WriteLine("\n{0} {1} {2} is not a Palindrome", letter1, letter2, letter3);
-                //The console will inform the user if the kletters selected are not Palindrome
+                //The console will inform the user if the letters selected are not Palindrome
                 Console.WriteLine("\nEnd of exercise. Press enter to continue");              
                 //At the end of your coding, you must have a "Console.ReadLine();" for the console to read your code
                 Console.ReadLine();

@@ -12,73 +12,73 @@ namespace IfPractices
         {
             //1. Comparing Integers Exercise
 
-            /*int a, b;
+            //int a, b; //Declaring variables to be used
 
-            Console.WriteLine("______________Welcome!________________");
-            Console.WriteLine("");
-            Console.WriteLine("Please enter your first number: ");
-            a = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Please enter your second number: ");
-            b = Int32.Parse(Console.ReadLine());
+            //Console.WriteLine("______________Welcome!________________");
+            //Console.WriteLine("");
+            //Console.WriteLine("Please enter your first number: ");
+            //a = Int32.Parse(Console.ReadLine());                    //Convert method used in this code
+            //Console.WriteLine("Please enter your second number: ");
+            //b = Int32.Parse(Console.ReadLine());
 
-            if (a > b)
-            {
-                Console.WriteLine("{0} is greater than {1}", a, b);
-                Console.Read();
-            }
-            else if (a == b)
-            {
-                Console.WriteLine("a {0} is equal to b", a);
-                Console.Read();
-            }
-            else if (a < b)
-            {
-                Console.WriteLine("a {0} is les than b", a);
-            }
+            //if (a > b)                                              //If statement used declaring whether the 1st variable is greater than 2nd variable
+            //{
+            //    Console.WriteLine("{0} is greater than {1}", a, b);
+            //    Console.Read();
+            //}
+            //else if (a == b)                                       //else if statement used declaring whether the 1st variable is equal to 2nd variable
+            //{
+            //    Console.WriteLine("a {0} is equal to b", a);
+            //    Console.Read();
+            //}
+            //else if (a < b)                                       //else if statement used declaring whether the 1st variable is less than 2nd variable
+            //{
+            //    Console.WriteLine("a {0} is les than b", a);
+            //}
 
-            Console.ReadLine();*/
+            //Console.ReadLine();
 
             //2. Guess my number Exercise
 
-            /*Random random = new Random (); 
-            int randomNumber = random.Next(1, 11);
-            int guess;
-            int numberOfGuesses = 4;
-            bool gameOver = false;
+            //Random random = new Random();              //declaring all variables to be used
+            //int randomNumber = random.Next(1, 11);
+            //int guess;
+            //int numberOfGuesses = 4;
+            //bool gameOver = false;
 
-            Console.WriteLine("______________Welcome!______________");
-            Console.WriteLine("");
-            Console.WriteLine("Guess my number between 1 and 10 What is it? ");
+            //Console.WriteLine("______________Welcome!______________");
+            //Console.WriteLine("");
+            //Console.WriteLine("Guess my number between 1 and 10 What is it? ");
 
-            while (gameOver == false)
-            {
-                guess = Convert.ToInt32(Console.ReadLine());
-                numberOfGuesses--;
+            //while (gameOver == false)                               //While loop statement used with "if" and "if else" statements inside the "while loop" statement
+            //{
+            //    guess = Convert.ToInt32(Console.ReadLine());
+            //    numberOfGuesses--;
 
-                if (guess != randomNumber && numberOfGuesses == 0)
-                {
-                    Console.WriteLine("\nSorry, that's 4 guesses");
-                    gameOver = true;
-                }
-                else if (guess == randomNumber)
-                {
-                    Console.WriteLine("\nCongratulations! You have guessed my number! ");
-                    gameOver = true;
-                }
-                else if (guess > randomNumber)
+            //    if (guess != randomNumber && numberOfGuesses == 0)
+            //    {
+            //        Console.WriteLine("\nSorry, that's 4 guesses");
+            //        gameOver = true;
+            //    }
+            //    else if (guess == randomNumber)
+            //    {
+            //        Console.WriteLine("\nCongratulations! You have guessed my number! ");
+            //        gameOver = true;
+            //    }
+            //    else if (guess > randomNumber)
 
-                    Console.WriteLine("\nSorry, My number is smaller than the number you have guessed. Try again: ");
+            //        Console.WriteLine("\nSorry, My number is smaller than the number you have guessed. Try again: ");
 
-                else if (guess < randomNumber)
+            //    else if (guess < randomNumber)
 
-                    Console.WriteLine("\nSorry, my number is higher than the number you have guessed. Please try again ");
-               
-            }
-            Console.Read();*/
+            //        Console.WriteLine("\nSorry, my number is higher than the number you have guessed. Please try again ");
+
+            //}
+            //Console.Read();
 
             // 3. Grade Exercise
 
-            //public static float GetUserInput ()
+
             //{
             //    int assignment;
             //    bool check = false;
@@ -86,22 +86,23 @@ namespace IfPractices
 
             //    Console.WriteLine("**************Welcome!*****************");
             //    Console.WriteLine("\nPlease enter the marks for all assignments: ");
-            //    for (int i = 1; i <= 4; i++)
-            //    {
-            //        do
-            //        {
-            //            Console.WriteLine("Enter marks for assignment " + i + ":");
-            //            assignment = int.Parse(Console.ReadLine());
-            //            if (assignment >= 101 || assignment <= 0)
-            //                Console.WriteLine("Error, try again.");
-            //            else
-            //                break;
-            //        } while (!check);
-            //        percentage = percentage + assignment;
-            //    }
+            //    //for (int i = 1; i <= 4; i++)
+            //    //{
+            //    //    do
+            //    //    {
+            //    //        Console.WriteLine("Enter marks for assignment " + i + ":");
+            //    //        assignment = int.Parse(Console.ReadLine());
+            //    //        if (assignment >= 101 || assignment <= 0)
+            //    //            Console.WriteLine("Error, try again.");
+            //    //        else
+            //    //            break;
+            //    //    } while (!check);
+            //    //    percentage = percentage + assignment;
+            //    //}
 
-            //    return percentage/4;
-            //float percentage = GetUserInput();                   
+            //    //return percentage / 4;
+
+            //    //float percentage = GetUserInput();
 
 
             //    Console.WriteLine("\nYour overall marks are: {0} ", percentage);
@@ -142,79 +143,62 @@ namespace IfPractices
             //    {
             //        Console.WriteLine("\nERROR! Try again: ");
             //    }
-            //Console.ReadLine();
+            //    Console.ReadLine();
 
-
-            //4.Odd or Even Exercise
-
-            /*int a = (1 - 1000);
-            int b = (1 - 1000);
-
-            Console.WriteLine("************************Welcome**********************");
-            Console.WriteLine("\nChoose your first number: ", a);
-            a = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("\nChoose your second number: ", b);
-            b = Int32.Parse(Console.ReadLine());
-
-            if (a%b == 0)
-            {
-                Console.WriteLine("\nNumber is even");
             }
-            else
-            {
-                Console.WriteLine("\nNumber is odd");
-            }
-            
-            Console.ReadLine();*/
 
-            //5. New pin number program
+                //4.Odd or Even Exercise
 
-            /*int Attempts = 0;
-            string pinCode1, pinCode2;
-            //Simple iteration upto three times
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine("Enter a 4-digit pin: ");
-                pinCode1 = Console.ReadLine();
-                Console.WriteLine("Re-enter your 4-digit pin again: ");
-                pinCode2 = (Console.ReadLine());
+                /*int a = (1 - 1000);
+                int b = (1 - 1000);
 
-                if (Attempts >= 1000 || Attempts <= 9999)
-                
-                    Console.WriteLine("ERROR! Pin number does not match. Please try again: ");
-                
-                else if (pinCode1 != "valid" || pinCode2 != "valid")
-                    Attempts++;
+                Console.WriteLine("************************Welcome**********************");
+                Console.WriteLine("\nChoose your first number: ", a);
+                a = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("\nChoose your second number: ", b);
+                b = Int32.Parse(Console.ReadLine());
 
-                
+                if (a%b == 0)
+                {
+                    Console.WriteLine("\nNumber is even");
+                }
                 else
                 {
-                    Console.WriteLine("Match successful");
-                }                  
-                                
-                    break;
-            }          
-            
+                    Console.WriteLine("\nNumber is odd");
+                }
 
-            Console.ReadKey();*/
+                Console.ReadLine();*/
 
-           
-               
-            }
+                //5. New pin number program
+
+                /*int Attempts = 0;
+                string pinCode1, pinCode2;
+                //Simple iteration upto three times
+                for (int i = 0; i < 3; i++)
+                {
+                    Console.WriteLine("Enter a 4-digit pin: ");
+                    pinCode1 = Console.ReadLine();
+                    Console.WriteLine("Re-enter your 4-digit pin again: ");
+                    pinCode2 = (Console.ReadLine());
+
+                    if (Attempts >= 1000 || Attempts <= 9999)
+
+                        Console.WriteLine("ERROR! Pin number does not match. Please try again: ");
+
+                    else if (pinCode1 != "valid" || pinCode2 != "valid")
+                        Attempts++;
 
 
+                    else
+                    {
+                        Console.WriteLine("Match successful");
+                    }                  
 
-
-
-
-
-
-
-
-        }
-
-       
-
-        
+                        break;
+                }         
+                
+                Console.ReadKey();*/
+                
+        }                
     }
 }
